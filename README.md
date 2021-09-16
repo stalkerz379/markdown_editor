@@ -35,7 +35,7 @@ Implement the help function that will print available syntax commands, which we 
 
 ## Stage 3: Text formatting
 
-###Objectives
+### Objectives
 - [x] Implement a separate function for each of the formatters. 
 - The program should work in the following way:
     - [x] Ask a user to input a formatter.
@@ -47,9 +47,13 @@ Different formatters may require different inputs.
 
 The new-line formatter does not require text input.
 
-Plain, bold, italic, and inline-code formatters require only text input, and should not add an extra space or line break at the end:
+`Plain, bold, italic, and inline-code formatters` require only text input, and should **not add an extra space or line break at the end**:
 >Text: > Some text
 
+Headers require a level and text. A level is a number from 1 to 6. Don't forget to check it too: if it is out of bounds, print the corresponding error: `The level should be within the range of 1 to 6`. Also, remember that a heading automatically adds a new line in the end.
+
+>Level: > 4
+>Text: > Hello World!
 
 ## Stage 5: Save the results
 ### Description
