@@ -53,6 +53,7 @@ The new-line formatter does not require text input.
 Headers require a level and text. A level is a number from 1 to 6. Don't forget to check it too: if it is out of bounds, print the corresponding error: `The level should be within the range of 1 to 6`. Also, remember that a heading automatically adds a new line in the end.
 
 >Level: > 4
+
 >Text: > Hello World!
 
 ## Stage 5: Save the results
