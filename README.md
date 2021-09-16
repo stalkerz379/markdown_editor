@@ -68,7 +68,7 @@ Link requires a label and a URL:
 
 Implement the ordered-list and unordered-list formatters. 
 
-   >Number of rows: > 3
+>Number of rows: > 3
     Row #1: > First element
     Row #2: > Second element
     Row #3: > Third element
