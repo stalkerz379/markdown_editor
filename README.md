@@ -69,9 +69,14 @@ Link requires a label and a URL:
 Implement the ordered-list and unordered-list formatters. 
 
 >Number of rows: > 3
+
 >Row #1: > First element
+
 >Row #2: > Second element
+
 >Row #3: > Third element
+
+Don't forget to check that the number of rows is greater than zero! Otherwise, print the following message: `The number of rows should be greater than zero`
 
 ## Stage 5: Save the results
 
