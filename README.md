@@ -56,8 +56,27 @@ Headers require a level and text. A level is a number from 1 to 6. Don't forget 
 
 >Text: > Hello World!
 
+Link requires a label and a URL:
+
+>Label: > Tutorial
+
+>URL: > https://www.markdownguide.org/basic-syntax/
+
+## Stage 4: Ordered and unordered lists
+
+### Objectives
+
+Implement the ordered-list and unordered-list formatters. 
+
+   >Number of rows: > 3
+    Row #1: > First element
+    Row #2: > Second element
+    Row #3: > Third element
+
 ## Stage 5: Save the results
+
 ### Description
+
 By this moment, our program can recognize some of the formatters and special commands, it can also print the results and exit. We need to implement yet another very useful feature — the ability to save the text to a file.
 
 ### Objectives
