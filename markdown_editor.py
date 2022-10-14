@@ -1,9 +1,4 @@
 def markdown_editor_options():
-    #string = ''
-    '''options = {'plain': plain_text(string), 'bold': bold_text(string),
-               'italic': italic_text(string), 'inline-code': inline_code(string),
-               'link': link(string), 'header': header(string), 'new-line': new_line(string)}
-    special_options = ['!help', '!done']'''
     options = ['plain', 'bold', 'italic', 'inline-code', 'link', 'header', 'new-line', 'ordered-list', 'unordered-list']
     special_options = ['!help', '!done']
     return options, special_options
@@ -12,28 +7,24 @@ def markdown_editor_options():
 def plain_text():
     string = input("Text: ")
     formatted_text = string
-    #print(formatted_text, end='')
     return formatted_text
 
 
 def bold_text():
     string = input("Text: ")
     formatted_text = f'**{string }**'
-    #print(formatted_text, end='')
     return formatted_text
 
 
 def italic_text():
     string = input("Text: ")
     formatted_text = '*' + string + '*'
-    #print(formatted_text, end='')
     return formatted_text
 
 
 def inline_code():
     string = input("Text: ")
     formatted_text = '`' + string + '`'
-    #print(formatted_text, end='')
     return formatted_text
 
 
@@ -41,7 +32,6 @@ def link():
     label = input('Label: ')
     url = input('URL: ')
     formatted_text = f'[{label}]({url})'
-    #print(formatted_text, end='')
     return formatted_text
 
 
@@ -53,7 +43,6 @@ def header():
             raise ValueError
         string = input("Text: ")
         formatted_text = header_lvls[lvl] + ' ' + string + '\n'
-        #print(formatted_text, end='')
         return formatted_text
     except ValueError:
         print('The level should be within the range of 1 to 6')
@@ -62,7 +51,6 @@ def header():
 
 def new_line():
     formatted_text = '\n'
-    #print(formatted_text)
     return formatted_text
 
 
@@ -114,12 +102,11 @@ def choosing_function(option, whole_text):
         formatted_text = making_list(option)
         whole_text.extend(formatted_text)
         return whole_text
-
     whole_text.append(formatted_text)
     return whole_text
 
 
-def selecting_option():
+def main():
     options, special_options = markdown_editor_options()
     whole_text = []
     while True:
@@ -137,7 +124,6 @@ def selecting_option():
             exit()
         else:
             print('Unknown formatting type or command')
-    return ''
 
-
-print(selecting_option())
+if __name__ == '__main__':
+    main()
